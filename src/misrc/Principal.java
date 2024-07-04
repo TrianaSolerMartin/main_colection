@@ -12,6 +12,7 @@ public class Principal {
 
     public static void main(String[] args) {
         ejemplo1();
+        ejemplo2();
     }
     
     //CREAR UNA COLECCION TREESET
@@ -42,6 +43,23 @@ public class Principal {
     for (int i=0; i<enteros_al.size(); i++){
     System.out.print(enteros_al.get(i)+"c ");
     }
+    }
+    
+    //crear un treset de tipo cadena 
+    public static void ejemplo2(){
+        
+        Set<String> nombres_ts = new TreeSet<>();
+        
+        nombres_ts.add ("Luis");
+        nombres_ts.add ("Antonio");
+        nombres_ts.add ("Jorse Luis");
+        nombres_ts.add ("Giovani");
+        nombres_ts.add ("Luis");
+        nombres_ts.add ("Luis");
+        
+        for (String elemento: nombres_ts){
+            System.out.println(elemento);
+        }
     }
 
 }
