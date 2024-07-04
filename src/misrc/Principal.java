@@ -24,20 +24,22 @@ public class Principal {
     enteros_ts.add(3);
     enteros_ts.add(4);
     enteros_ts.add(4);
+    enteros_ts.add(3);
     
  //filtra y elimina los duplicados ademas de ordenado alfabetica o numericamente
     for(Integer elemento: enteros_ts){
         System.out.print(elemento + "a ");
     }
 
-    ////recorre el treeset elemento por elemento 
+    //recorre el treeset elemento por elemento y lo convierte en array
     List<Integer> enteros_al =new ArrayList<>(enteros_ts);
     
     for (Integer elemento: enteros_al){
         System.out.print(elemento +"b ");
     }
     
-    for (int i=0; i<enteros_ts.size(); i++){
+    //recorre el array
+    for (int i=0; i<enteros_al.size(); i++){
     System.out.print(enteros_al.get(i)+"c ");
     }
     }
